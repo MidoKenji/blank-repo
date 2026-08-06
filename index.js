@@ -1,2 +1,2 @@
 const frenchHelloWorld = 'Bonjout Le Monde'
-console.log('Ciao Mondo!git');
+console.log('Ciao Mondo!');
