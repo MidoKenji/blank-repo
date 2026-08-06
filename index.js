@@ -1,2 +1,5 @@
 const frenchHelloWorld = 'Bonjout Le Monde'
-console.log('Ciao Mondo!');
+
+const germanHelloWorld = 'Hallo, Welt!'
+const italianHelloWorld = 'Ciao Mondo'
+console.log(italianHelloWorld);
