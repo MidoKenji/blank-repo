@@ -13,6 +13,7 @@ import { bytesToSize } from './FreeMemory.mjs';
 
 
 //lets make a function to call print the system info
+//FIX: forgot tempo lit needs back ticks not single qoute
 function printMySystemInfo(){
     const platform = os.platform();
     const kernelType = os.type().toLowerCase();
@@ -21,9 +22,9 @@ function printMySystemInfo(){
     const totalMemory = bytesToSize(os.totalmem());
 
     console.log('System Information Shit');
-    console.log('Operating Sys: ${platform}, ${kernelType}, ${kernelRelease}');
-    console.log('Free Memory: ${freeMemory} ');
-    console.log('Total Memory: ${totalMemory}');
+    console.log(`Operating Sys: ${platform}, ${kernelType}, ${kernelRelease}`);
+    console.log(`Free Memory: ${freeMemory} `);
+    console.log(`Total Memory: ${totalMemory}`);
 }
 
 printMySystemInfo();
