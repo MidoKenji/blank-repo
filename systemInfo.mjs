@@ -44,7 +44,12 @@ function getObjSystemInfo(){
 
 
 const meWantOSInfo = getObjSystemInfo();
+console.log('System Information');
+console.log(`Operating Sys: ${meWantOSInfo.platform}, ${meWantOSInfo.kernType}, ${meWantOSInfo.kernelRelease}`);
+console.log(`Free Memory: ${meWantOSInfo.freeMemory}`);
+console.log(`Total Memory: ${meWantOSInfo.totalMemory}`);
 
+
+//Result: Operating Sys: [object Object] gotta call the property not the object.
 console.log(`Operating Sys: ${meWantOSInfo}`);
 
-//printMySystemInfo();
