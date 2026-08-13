@@ -8,7 +8,7 @@
  * os.freemem()/ os.totalmem() both returns in bytes (which is what the )
  * 
  */
-import os from 'os';
+import os, { platform } from 'os';
 import { bytesToSize } from './FreeMemory.mjs';
 
 
@@ -26,5 +26,22 @@ function printMySystemInfo(){
     console.log(`Free Memory: ${freeMemory} `);
     console.log(`Total Memory: ${totalMemory}`);
 }
+
+//Second Way: I feel that the first method i was DRY so ill try an object method that makes the code reusable.
+function getObjSystemInfo(){
+    return{
+        platform: os.platform(),
+        kernType: os.type(),
+        kernelRelease: os.release(),
+        //how do i call the converter fuck me
+        freeMemory:
+
+    };
+
+
+}
+
+
+
 
 printMySystemInfo();
