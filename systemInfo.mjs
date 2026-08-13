@@ -47,7 +47,10 @@ console.log(`Free Memory: ${meWantOSInfo.freeMemory}`);
 console.log(`Total Memory: ${meWantOSInfo.totalMemory}`);
 */
 
-/* Claude's Suggestion to call it */
+/* Claude's Suggestion to call it
+ * It's called destructuring or destructuring assignment which is unpacking its own individual variables in one line
+ * my understanding it is that it reads right to left like we evaluate R then left describes what to do. Its basically a barbie doll
+ */
 
 const { platform, kernType, kernelRelease, freeMemory, totalMemory } =
   getObjSystemInfo();
