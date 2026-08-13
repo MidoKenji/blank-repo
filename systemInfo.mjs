@@ -9,7 +9,7 @@
  * 
  */
 import os from 'os';
-import { bytesToSize } from '../FreeMemeory';
+import { bytesToSize } from './FreeMemory.mjs';
 
 
 //lets make a function to call print the system info
