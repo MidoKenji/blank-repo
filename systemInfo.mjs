@@ -8,7 +8,7 @@
  * os.freemem()/ os.totalmem() both returns in bytes (which is what the )
  * 
  */
-import os, { platform } from 'os';
+import os from 'os';
 import { bytesToSize } from './FreeMemory.mjs';
 
 
@@ -42,14 +42,21 @@ function getObjSystemInfo(){
 
 }
 
-
+/* This way fucking sucks to call it.
 const meWantOSInfo = getObjSystemInfo();
 console.log('System Information');
 console.log(`Operating Sys: ${meWantOSInfo.platform}, ${meWantOSInfo.kernType}, ${meWantOSInfo.kernelRelease}`);
 console.log(`Free Memory: ${meWantOSInfo.freeMemory}`);
 console.log(`Total Memory: ${meWantOSInfo.totalMemory}`);
+*/
 
 
-//Result: Operating Sys: [object Object] gotta call the property not the object.
-console.log(`Operating Sys: ${meWantOSInfo}`);
+/* Claude's Suggestion to call it */
+
+const { platform, kernType, kernelRelease, freeMemory, totalMemory } = getObjSystemInfo();
+
+console.log('System Information');
+console.log(`Operating Sys: ${platform}, ${kernType}, ${kernelRelease}`);
+console.log(`Free Memory: ${freeMemory}`);
+console.log(`Total Memory: ${totalMemory}`);
 
