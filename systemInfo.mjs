@@ -13,6 +13,7 @@ import { bytesToSize } from "./FreeMemory.mjs";
 
 //lets make a function to call print the system info
 //FIX: forgot tempo lit needs back ticks not single qoute
+// eslint-disable-next-line no-unused-vars
 function printMySystemInfo() {
   const platform = os.platform();
   const kernelType = os.type().toLowerCase();
@@ -38,7 +39,7 @@ function getObjSystemInfo() {
   };
 }
 
-/* This way fucking sucks to call it.
+/* This way fucking suks to call it.
 const meWantOSInfo = getObjSystemInfo();
 console.log('System Information');
 console.log(`Operating Sys: ${meWantOSInfo.platform}, ${meWantOSInfo.kernType}, ${meWantOSInfo.kernelRelease}`);
