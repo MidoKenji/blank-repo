@@ -34,7 +34,8 @@ function getObjSystemInfo(){
         kernType: os.type(),
         kernelRelease: os.release(),
         //how do i call the converter fuck me
-        freeMemory:
+        freeMemory: bytesToSize(os.freemem()),
+        totalMemory: bytesToSize(os.totalmem())
 
     };
 
