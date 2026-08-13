@@ -8,3 +8,21 @@
  * os.freemem()/ os.totalmem() both returns in bytes (which is what the )
  * 
  */
+import os from 'os';
+import { bytesToSize } from '../FreeMemeory';
+
+
+//lets make a function to call print the system info
+function printMySystemInfo(){
+    const platform = os.platform();
+    const kernelType = os.type().toLowerCase();
+    const kernelRelease = os.release();
+    const freeMemory = bytesToSize(os.freemem());
+    const totalMemory = bytesToSize(os.totalmem());
+
+    console.log('System Information');
+    console.log('Operating Sys:');
+    console.log('Free Memory: ');
+    console.log('Total Memory: ');
+}
+
