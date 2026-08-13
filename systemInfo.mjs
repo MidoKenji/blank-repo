@@ -43,6 +43,8 @@ function getObjSystemInfo(){
 }
 
 
+const meWantOSInfo = getObjSystemInfo();
 
+console.log(`Operating Sys: ${meWantOSInfo}`);
 
-printMySystemInfo();
+//printMySystemInfo();
