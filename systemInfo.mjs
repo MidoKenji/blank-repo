@@ -21,8 +21,9 @@ function printMySystemInfo(){
     const totalMemory = bytesToSize(os.totalmem());
 
     console.log('System Information Shit');
-    console.log('Operating Sys: ${}');
-    console.log('Free Memory: ');
-    console.log('Total Memory: ');
+    console.log('Operating Sys: ${platform}, ${kernelType}, ${kernelRelease}');
+    console.log('Free Memory: ${freeMemory} ');
+    console.log('Total Memory: ${totalMemory}');
 }
 
+printMySystemInfo();
